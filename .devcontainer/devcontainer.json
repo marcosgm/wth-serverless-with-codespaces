@@ -1,6 +1,6 @@
 {
     "name" : "Azure Serverless WTH in Codespaces",
-    "image": "mcr.microsoft.com/devcontainers/dotnet:6.0",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
         "ghcr.io/devcontainers/features/common-utils": {},
         "ghcr.io/devcontainers/features/azure-cli": {}
@@ -9,8 +9,8 @@
       "cpus": 1
     },
     "waitFor": "onCreateCommand",
-    "updateContentCommand":"curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash",
-    "postCreateCommand": "nvm install v18",
+    "updateContentCommand":"sudo apt install dotnet-sdk-6 nodejs",
+    "postCreateCommand": "",
     "customizations": {
       "codespaces": {
         "openFiles": []
