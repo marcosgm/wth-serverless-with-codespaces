@@ -19,6 +19,8 @@
       "openFiles": []
     },
     "vscode": {
+      "workbench.iconTheme": "vs-minimal",
+      "workbench.colorTheme": "Default Dark Modern",
       "extensions": [
         "ms-dotnettools.vscode-dotnet-runtime",
         "ms-dotnettools.csdevkit",
