@@ -8,18 +8,27 @@
         "ghcr.io/devcontainers/features/node:1": {},
         "ghcr.io/jlaundry/devcontainer-features/azure-functions-core-tools:1": {}
     },
-    "vscode": {
-      "workbench.iconTheme": "vs-minimal",
-      "workbench.colorTheme": "Default Dark Modern",
-      "extensions": [
-        "ms-dotnettools.vscode-dotnet-runtime",
-        "ms-dotnettools.csdevkit",
-        "ms-dotnettools.csharp",
-        "ms-azuretools.vscode-azurefunctions",
-        "ms-vscode.vscode-typescript-next",
-        "ms-vscode.azure-account",
-        "ms-azuretools.vscode-azureresourcegroups",
-        "gruntfuggly.todo-tree"
-      ]
+    "hostRequirements": {
+      "cpus": 1
+    },
+    "waitFor": "onCreateCommand",
+    "updateContentCommand":"",
+    "postCreateCommand": "",
+    "customizations": {
+      "codespaces": {
+        "openFiles": []
+      },
+      "vscode": {
+        "extensions": [
+          "ms-dotnettools.vscode-dotnet-runtime",
+          "ms-dotnettools.csdevkit",
+          "ms-dotnettools.csharp",
+          "ms-azuretools.vscode-azurefunctions",
+          "ms-vscode.vscode-typescript-next",
+          "ms-vscode.azure-account",
+          "ms-azuretools.vscode-azureresourcegroups",
+          "gruntfuggly.todo-tree"
+        ]
+      }
     }
   }
